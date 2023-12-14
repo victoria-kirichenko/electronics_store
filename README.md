@@ -1,2 +1,2 @@
-Интернет-магазин электроники
-Стек: Java 17, Spring Framework, Jpa, PostgreSQL, JSON
+#Интернет-магазин электроники
+* Стек: Java 17, Spring Framework, Jpa, PostgreSQL, JSON
