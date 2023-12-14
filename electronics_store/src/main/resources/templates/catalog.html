@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalog</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<h1>Каталог</h1>
+<ul class="top-menu">
+  <li><a th:href="@{/}">Главная</a></li>
+  <li><a th:href="@{/category/laptops}">Ноутбуки</a></li>
+  <li><a th:href="@{/category/smartphones}">Смартфоны</a></li>
+  <li><a th:href="@{/category/headphones}">Наушники</a></li>
+  <li><a th:href="@{/cart}">Корзина</a></li>
+</ul>
+<div th:each="product : ${products}" class="product-container">
+  <img th:src="${product.imagePath}" alt="Product Image" width="100">
+  <h2 th:text="${product.name}"></h2>
+  <p><span th:text="${product.price}"></span> руб.</p>
+  <a th:href="@{'/product-details/' + ${product.id}}">Подробнее</a>
+  <form method="post" th:action="@{'/addToCart/' + ${product.id} + '/' + ${product.name} + '/' + ${product.price}}">
+    <input type="submit" value="В корзину" class="btn-new">
+  </form>
+</div>
+</body>
+</html>

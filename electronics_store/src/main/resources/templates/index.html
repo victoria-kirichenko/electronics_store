@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<h1>Electronics Store</h1>
+<ul class="top-menu">
+    <li><a th:href="@{/catalog}">Каталог</a></li>
+    <li><a th:href="@{/cart}">Корзина</a></li>
+    <li><a th:href="@{/admin}">Вход сотруднику</a></li>
+</ul>
+<div class="welcome-text">
+    <h2>Добро пожаловать в наш магазин электроники!</h2>
+    <p>Здесь вы найдете широкий ассортимент товаров для вашей техники.</p>
+</div>
+</body>
+</html>

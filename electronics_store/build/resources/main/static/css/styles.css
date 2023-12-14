@@ -1,0 +1,142 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+.product-container {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.btn-new {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-new:hover {
+    background-color: #45a049;
+}
+
+/* Стили для верхнего меню */
+.top-menu {
+    background-color: #333; /* Цвет фона */
+    overflow: hidden;
+}
+
+.top-menu a {
+    float: left; /* Устанавливаем элементы меню в ряд */
+    display: block; /* Превращаем ссылки в блочные элементы */
+    color: white; /* Цвет текста */
+    text-align: center; /* Выравниваем текст по центру */
+    padding: 14px 16px; /* Отступы вокруг текста */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+.top-menu a:hover {
+    background-color: #ddd; /* Цвет фона при наведении */
+    color: black; /* Цвет текста при наведении */
+}
+
+/* Дополнительные стили для активной страницы */
+.top-menu a.active {
+    background-color: #4CAF50; /* Цвет фона активной ссылки */
+    color: white; /* Цвет текста активной ссылки */
+}
+
+/* Стили для выпадающего списка категорий */
+.catalog-categories {
+    margin-top: 20px; /* Отступ сверху блока категорий */
+}
+
+.catalog-categories label {
+    margin-right: 10px; /* Отступ справа для метки */
+}
+
+.catalog-categories select {
+    padding: 8px; /* Отступы вокруг списка */
+}
+
+.catalog-categories button {
+    padding: 8px 12px; /* Отступы вокруг кнопки */
+    background-color: #4CAF50; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+.catalog-categories button:hover {
+    background-color: #45a049; /* Цвет фона при наведении на кнопку */
+}
+
+.cart-item {
+    list-style-type: none; /* убираем маркеры списка */
+    margin-bottom: 10px; /* задаем отступ снизу для разделения элементов */
+    padding: 10px; /* задаем отступ внутри элемента для лучшего визуального восприятия */
+    border: 1px solid #ddd; /* добавляем границу для рамки элемента */
+    background-color: #f9f9f9; /* задаем фон элемента */
+}
+
+.form-order {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.label-order {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Жирный шрифт для лейблов */
+}
+
+.input-order {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+}

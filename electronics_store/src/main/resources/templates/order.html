@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<h1>Оформление заказа</h1>
+
+<form method="post" th:action="@{'/order'}" class="form-order">
+    <label for="firstName" class="label-order">Имя:</label>
+    <input type="text" id="firstName" name="firstName" class="input-order" required>
+    <label for="lastName" class="label-order">Фамилия:</label>
+    <input type="text" id="lastName" name="lastName" class="input-order" required>
+    <label for="mobilePhone" class="label-order">Номер телефона:</label>
+    <input type="text" id="mobilePhone" name="mobilePhone" class="input-order" required>
+    <label for="email" class="label-order">Почта:</label>
+    <input type="text" id="email" name="email" class="input-order" required>
+
+    <ul th:each="item : ${cartItems}" class="product">
+        <li th:text="${item.name + ' - ' + item.quantity + 'шт. - ' + item.totalPrice + ' руб.'}" class="cart-item"></li>
+    </ul>
+
+    <h2>Итоговая сумма:</h2>
+    <p th:text="${totalAmount}"></p>
+
+    <input type="submit" value="Оформить заказ" class="input-order" class="btn-new">
+</form>
+</body>
+</html>
